@@ -26,3 +26,11 @@ SET address = '456 New Lucknow', zip = '67890', phone_number = '5555678', email 
 WHERE first_name = 'Divya' AND last_name = 'Mishra';
 
 DELETE FROM address_book WHERE first_name = 'ritu' /* delete particular row by name */
+
+INSERT INTO address_book VALUES('Ritu','Pandey','Sector-2','Bhilai','CG','456786','90456723','ritu@gmail.com') /* again insert one more value */
+
+SELECT * FROM address_book WHERE city = 'Bhilai' /* search by city */
+SELECT * FROM address_book WHERE state = 'MP'/* search by state */
+SELECT DISTINCT city FROM address_book /* distinct values */
+SELECT DISTINCT state FROM address_book
+
