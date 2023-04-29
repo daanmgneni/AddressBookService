@@ -16,6 +16,10 @@
 SELECT * FROM address_book /* retrive data */
 
 /* insert values */
-INSERT INTO address_book VALUES('Dhanesh','P','Sector-7','Bhilai','CG','490006','908765323','daan@gmail.com'),
+INSERT INTO address_book VALUES('Aakanksha','Pandey','Sector-7','Bhilai','CG','490006','908765323','aakan@gmail.com'),
 								('Divya','Mishra','Block2','Lucknow','UP','490566','90845723','divya@gmail.com'),
 								('Shivam','Tripathi','Area -8/11','Bhopal','MP','370006','903456323','shivam@gmail.com')
+
+UPDATE address_book /* Edit Contact */
+SET address = '456 New Lucknow', zip = '67890', phone_number = '5555678', email = 'divya612@gmail.com'
+WHERE first_name = 'Divya' AND last_name = 'Mishra';
